@@ -1,0 +1,107 @@
+/* Edit Service Details Styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('./images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .edit-service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+  }
+  
+  .edit-service-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .message {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #28a745;
+  }
+  
+  .message.error {
+    color: #e63946;
+  }
+  
+  /* Mobile Responsive */
+  @media screen and (max-width: 600px) {
+    form {
+      padding: 1.5rem;
+    }
+  
+    .edit-service-container h2 {
+      font-size: 1.25rem;
+    }
+  
+    .form-group input {
+      font-size: 0.95rem;
+    }
+  
+    button[type="submit"] {
+      font-size: 0.95rem;
+    }
+  }
+  

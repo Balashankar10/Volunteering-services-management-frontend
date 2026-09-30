@@ -1,0 +1,70 @@
+.rate-page h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .rate-msg {
+    text-align: center;
+    color: green;
+    margin-bottom: 1rem;
+  }
+  
+  .rate-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .star-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .star-row label {
+    margin-right: 0.5rem;
+  }
+  
+  .star {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-right: 0.25rem;
+  }
+  
+  .star.filled {
+    color: gold;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0069d9;
+  }
+  

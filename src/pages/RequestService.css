@@ -1,0 +1,131 @@
+/* General body styling with shared background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('./images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Page wrapper */
+  .request-service-container {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    backdrop-filter: blur(4px);
+  }
+  
+  /* Card-style form wrapper */
+  .request-form-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    line-height: 30px;
+  }
+  
+  .request-form-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Form inputs and layout */
+  .request-form-card form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .request-form-card label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #444;
+  }
+  
+  .request-form-card input[type="text"],
+  .request-form-card input[type="email"],
+  .request-form-card input[type="date"],
+  .request-form-card input[type="time"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Location & Submit Buttons */
+  .request-form-card button {
+    margin-top: 15px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .request-form-card button[type="button"] {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  .request-form-card button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .request-form-card button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Location link */
+  .request-form-card p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .request-form-card p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Message feedback */
+  .request-form-card p {
+    margin-top: 15px;
+    font-weight: 500;
+    color: #e60000;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 600px) {
+    .request-form-card {
+      padding: 1.5rem;
+    }
+  
+    .request-form-card h2 {
+      font-size: 1.5rem;
+    }
+  
+    .request-form-card button {
+      width: 100%;
+    }
+  }
+
+  /* Align checkbox and label neatly */
+.request-form-card label[for="emergencyContact"],
+.request-form-card input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+  

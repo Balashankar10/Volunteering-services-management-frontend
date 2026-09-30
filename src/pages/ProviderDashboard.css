@@ -1,0 +1,152 @@
+/* Provider Dashboard Styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('./images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .dashboard-container {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(4px);
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .service-card {
+    background-color: rgba(255, 255, 255, 0.96);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  .service-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #444;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .update-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .pending-btn {
+    background-color: #ffc107;
+    color: #222;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .error-message {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .loading-text {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 600px) {
+    .dashboard-title {
+      font-size: 1.6rem;
+    }
+  
+    .service-card {
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .btn {
+      width: 100%;
+      font-size: 0.95rem;
+    }
+  }
+
+  .qr-section {
+    margin-top: 15px;
+}
+
+.qr-code-image {
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+.toggle-reviews-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reviews-section {
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.review-card {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.qr-code-img {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}

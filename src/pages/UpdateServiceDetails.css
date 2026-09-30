@@ -1,0 +1,94 @@
+/* Apply shared background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('./images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Container for form */
+  .update-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+    backdrop-filter: blur(4px);
+  }
+  
+  /* Card-style form wrapper */
+  .update-form-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .update-form-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Form layout */
+  .update-form-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-form-card input {
+    margin-bottom: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    transition: border-color 0.2s ease;
+  }
+  
+  .update-form-card input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Submit button */
+  .update-form-card button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .update-form-card button:hover {
+    background-color: #218838;
+  }
+  
+  /* Message feedback */
+  .update-form-card p {
+    margin-top: 15px;
+    font-weight: 500;
+    text-align: center;
+    color: #e60000;
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 600px) {
+    .update-form-card {
+      padding: 1.5rem;
+    }
+  
+    .update-form-card h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

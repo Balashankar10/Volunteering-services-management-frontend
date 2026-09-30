@@ -1,0 +1,176 @@
+/* Overall page styling */
+.orders-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.loading-text,
+.error-message,
+.no-orders {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each card */
+.order-card {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card content (left side) */
+.order-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Current time - WhatsApp style */
+.order-time {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 12px;
+    color: gray;
+}
+
+/* Emergency Contact */
+.emergency-text {
+    color: red;
+    font-weight: bold;
+}
+
+/* Location button */
+.location-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.location-btn:hover {
+    background-color: #0056b3;
+}
+/* Location button */
+.location-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.location-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Popup Modal Styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.confirmation-input {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.confirm-btn, .cancel-btn {
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.confirm-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+/* Payment Pending Style */
+.payment-pending {
+    background-color: #ffcc00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.fee-input-section {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fee-input {
+    padding: 6px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-fee-btn {
+    padding: 6px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
